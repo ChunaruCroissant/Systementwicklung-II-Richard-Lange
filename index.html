@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <img src="assets/logo.webp" alt="Community Logo" class="logo">
+            <h1 class="site-title">Community</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero">
+            <img src="../Systementwicklung%20II%20Richard%20Lange/assets/community.avif" alt="Community Bild" class="hero-image">
+            <h1 class="hero-title">Willkommen in der Community</h1>
+        </section>
+
+        <div class="create-post-container">
+            <button onclick="window.location.href='create-thread.html'" class="create-post-button">Beitrag erstellen</button>
+            <select id="sort-dropdown" class="sort-dropdown">
+                <option value="date">Sortieren nach Datum</option>
+                <option value="title">Sortieren nach Titel</option>
+            </select>
+        </div>
+
+        <div class="posts-container" id="posts-container">
+            <!-- Die Forenbeiträge werden hier mithilfe von JavaScript dynamisch geladen. -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <hr>
+        <p>&copy; <span id="year"></span> Community. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

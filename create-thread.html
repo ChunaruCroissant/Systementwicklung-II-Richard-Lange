@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thread erstellen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <img src="assets/logo.webp" alt="Community Logo" class="logo">
+            <h1 class="site-title">Community</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h2>Neuen Beitrag erstellen</h2>
+        <form>
+            <label for="title">Titel:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="content">Inhalt:</label><br>
+            <textarea id="content" name="content" rows="10" required></textarea><br><br>
+            <button type="submit" class="create-post-button">Beitrag erstellen</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <hr>
+        <p>&copy; <span id="year"></span> Community. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
